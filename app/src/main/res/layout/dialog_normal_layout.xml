@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                 android:layout_width="fill_parent"
+                 android:layout_height="fill_parent"
+                 android:clickable="true"
+                 android:orientation="vertical"
+                 android:padding="20dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/text_18_ffffff"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/dialog_top_bg"
+                android:gravity="center"
+                android:text="@string/dialog_tv_title"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorDialogBottomBg"
+                android:gravity="center"
+                android:minHeight="120dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    style="@style/text_16_666666"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:lineSpacingMultiplier="1.5"
+                    android:paddingBottom="15.0dip"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:paddingTop="15dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorViewBg"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/dialog_bottom_bg"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/negativeButton"
+                    style="@style/text_15_ffffff_sdw"
+                    android:layout_width="114dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/dialog_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/dialog_btn_cancel"/>
+
+                <Button
+                    android:id="@+id/positiveButton"
+                    style="@style/text_15_ffffff_sdw"
+                    android:layout_width="114dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/dialog_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/dialog_btn_ok"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>

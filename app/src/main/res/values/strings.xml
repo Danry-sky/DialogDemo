@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DialogDemo</string>
+    <string name="dialog_tv_title">创建家庭</string>
+    <string name="dialog_btn_cancel">取消</string>
+    <string name="dialog_btn_ok">创建</string>
+    <string name="dialog_input_hint">请输入家庭名</string>
+</resources>
